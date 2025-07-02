@@ -123,7 +123,7 @@ async function handleTranslate() {
         chatHistory.push({ role: 'user', parts: [{ text: prompt }] });
 
         const payload = { contents: chatHistory };
-        const apiKey = 'AIzaSyAxUDoCVYkaJiXqMvXo6i9gF00G_YqtNuM'; // API key is provided by the environment
+        const apiKey = ''; // API key is provided by the environment
         const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
 
         const response = await fetch(apiUrl, {
